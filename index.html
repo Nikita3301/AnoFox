@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnoFox</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/icon"
+      sizes="32x32"
+      href="images/fox-logo.png"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <input type="checkbox" id="checkbox" onchange="checkBox()">
+        <label for="checkbox" id="checkbox_label"></label>
+        <!-- <img src="images/brightness.png" alt="light_mode" id="light"> -->
+        <img src="images/fox.png" alt="logo"/>
+        <h2 id="text_logo">
+          <span style="color: #565656">Ano</span
+          ><span style="color: #ff6700">Fox</span>
+        </h2>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#main">Main</a></li>
+          <li><a href="#our_foxes">Our foxes</a></li>
+          <li><a href="#prices">Prices</a></li>
+          <li><a href="#map">Map</a></li>
+          <li><a href="#contact_us">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main">
+      <div class="block1">
+        <img src="images/image.jpg" alt="image-with-fox" class="image1" />
+        <div class="text1">
+          <h2>Photo and video sessions with a fox</h2>
+          <p id="text">
+            A photo session with a pet fox is not only an opportunity to get
+            great pictures or a movie with the participation of a cunning
+            animal, but also an unforgettable experience of positive
+            communication with a playful and funny companion. Our beautiful
+            animals for filming and holidays are perfectly prepared for photo
+            sessions, including those with the participation of children. <br />
+            All guests must be instructed, because even an ordinary dog ​​or cat
+            can get a little confused in the company of unfamiliar people, to
+            say nothing of the initially wild foxes. Although all of our animals
+            are born and raised in captivity, therefore, they have a kind and
+            docile nature. You can choose which animal to take photos with -
+            with a red or white fox, a graceful silver fox or a big-eared fennec
+            baby.
+          </p>
+        </div>
+      </div>
+      <a name="our_foxes" class="anchor"></a>
+      <div class="block2">
+        <h2>Our foxes</h2>
+        <img src="images/images (4).jpg" alt="fox1" class="gallery" />
+        <img src="images/images (9).jpg" alt="fox2" class="gallery" />
+        <img src="images/images (7).jpg" alt="fox3" class="gallery" />
+        <img src="images/images (5).jpg" alt="fox4" class="gallery" />
+        <img src="images/images (8).jpg" alt="fox5" class="gallery" />
+        <img src="images/images (6).jpg" alt="fox6" class="gallery" />
+      </div>
+      <a name="prices" class="anchor"></a>
+      <div class="block3">
+        <h2>Prices</h2>
+        <div class="price_block">
+          <img src="images/images (11).jpg" alt="fox7" id="img11"/>
+          <p class="caption"> <b>Outside photo session</b> <br> Do a photo shoot anywhere you want, outdoors or indoors <br> <b class="price">$150</b></p>
+        </div>
+        <div class="price_block">
+          <img src="images/images (13).jpg" alt="fox8" id="img12"/>
+          <p class="caption"><b>In our studio</b> <br> We make photos in our studio with good positioned <br>cameras and ligtning<br> <b class="price">$180</b></p>
+        </div>
+        <div class="price_block">
+          <img src="images/images (16).jpg" alt="fox9" id="img13"/>
+          <p class="caption"><b>Photo session in your home</b> <br> We came in your house with our fox and cameras<br> <b class="price">$200</b></p>
+        </div>
+        <div class="block4">
+          <a name="map" class="anchor"></a>
+          <h2>Map</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34978.031463613!2d24.009839554609837!3d49.83304660714647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add29b5c12ab7%3A0xb1f5c4d468fbfcba!2sFoxtrot!5e0!3m2!1suk!2sua!4v1637178280266!5m2!1suk!2sua" width="800" height="500" style="border:0;" loading="lazy"></iframe>
+        </div>
+        <a name="contact_us" class="anchor"></a>
+        <div class="block5" id="form-block">
+          <h2>Contact us</h2>
+          <form id = "form" autocomplete="off" onSubmit="return formValidation(fullname.value, email.value, telphone.value);">
+            <label id="fullname_l">Full Name: <input type="text" id="fullname" onchange="validateFullName(fullname.value)"></label>
+            <br>
+            <label id="email_l">Email: <input type="text" id="email" onchange="validateEmailAddress(email.value)"></label>
+            <br>
+            <label id="telphone_l">Phone Number: <input type="tel" id="telphone" onchange="validatePhoneNumber(telphone.value)"></label>
+            <br>
+            <textarea placeholder="Your message" id="message"></textarea>
+            <br>
+            <div class="button-conteiner"><button type="submit" id="validate" onClick="event.preventDefault()">Submit</button></div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo">
+        <img id="fox_img" src="images/foxy.png" class="footer-logo-img" alt="logo-with-fox">
+      </div>
+      <div class="phonenumber">
+        <p><b>Phones:</b></p> <br>
+          <a href="tel:+123456890">+380674569832</a> <br>
+          <a href="tel:+123456890">+380987637163</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://t.me/nik3301"><img id="tg_img" src="images/telegram.png" alt="telegram-logo" class="footer-social-img"></a>
+        <a href="https://www.instagram.com/nik_33011/"><img id="inst_img" src="images/instagram.png" alt="instagram-logo" class="footer-social-img"></a>
+      </div>
+    </footer>
+    <p class="copyright">&copy; 2021 AnoFox All rights reserved</p>
+    <script src="js/script.js"></script>
+  </body>
+  
+</html>

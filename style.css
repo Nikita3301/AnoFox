@@ -1,0 +1,303 @@
+* {
+  scroll-behavior: smooth;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  max-width: 1440px;
+  margin: auto;
+  font-family: Garamond, sans-serif;
+}
+
+.anchor{
+  position: relative;
+  top:-70px;
+}
+a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #565656;
+  font-family: Garamond, sans-serif;
+}
+
+header {
+  position: fixed;
+  clear: both;
+  overflow: auto;
+  padding: 20px;
+  width: 100%;
+  background-color: #ffff;
+  border-bottom: 1px solid #d6d3d1;
+  z-index: 1000;
+}
+
+nav {
+  float: right;
+}
+.logo {
+  line-height: 40px;
+  margin: auto;
+  padding-left: 40px;
+}
+.logo h2 {
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  cursor: default;
+}
+
+.logo img {
+  float: left;
+  width: 45px;
+}
+ul {
+  padding-right: 40px;
+}
+ul li {
+  display: inline-block;
+  padding: 0 15px;
+  margin: auto;
+  line-height: 40px;
+}
+
+ul li a:hover {
+  color: #fe9e01;
+}
+
+#light{
+  margin: auto;
+  width: 35px;
+  margin-right: 20px;
+
+}
+#checkbox{
+  display: none;
+}
+
+
+/* ////////////////////////////////// Main ////////////////////////////////// */
+
+main > div {
+  padding-top: 30px;
+}
+.block1 {
+  padding-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form{
+  height: auto;
+  width: 100%;
+}
+
+.text1>p{
+  color: #565656;
+}
+.image1 {
+  width: 60%;
+  max-height: 340px;
+  object-fit: none;
+  vertical-align: middle;
+}
+.text1 {
+  float: right;
+  width: 40%;
+  text-align: center;
+  padding: 30px;
+}
+.course_reg{
+  padding-top: 20px;
+}
+.reg_button{
+  padding: 10px;
+  background: #39bb9d;
+  border: 1px solid #39bb9d;
+  text-align: center;
+  border-radius: 30px;
+}
+.price{
+  font-size: 50px;
+}
+
+/* //////////// our foxes ////////////////// */
+.block2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.block2 h2 {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+
+.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 380px;
+  height: 380px;
+  object-fit: cover;
+  filter: grayscale(0) blur(0);
+  transition: 0.3s ease-in-out;
+}
+
+
+.gallery:hover {
+  filter: grayscale(100%) blur(2px);
+}
+
+/* ///////// prices /////// */
+.block3 h2 {
+  text-align: center;
+  width: 100%;
+  padding: 30px 0;
+}
+.block3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.price_block {
+  vertical-align: top;
+  text-align: center;
+}
+.price_block > img {
+  width: 380px;
+  height: 380px;
+  background-color: grey;
+  margin: 5px;
+  border: 1px solid #ccc;
+  justify-content: center;
+}
+.caption {
+  text-align: center;
+}
+
+.price {
+  color: #fe9e01;
+  font-size: 18px;
+}
+
+/* ////////////////// Map ////////////////// */
+
+.block4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* ////////////////// Contact us ////////////////// */
+
+.block5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 30px 0;
+  
+}
+form {
+  width: 100%;
+  height: 650px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  font-size: 18px;
+}
+
+textarea {
+  height: 300px;
+  font-weight: bold;
+}
+
+button {
+  border: 2px solid #8F8F8F;
+}
+
+
+.button-conteiner {
+  /* background-color: #fe9e01; */
+  /* color: #ffff; */
+}
+
+.error{
+  position: absolute;
+  margin: auto;
+  height: 24px;
+}
+
+/* #fullname{
+  background-image: url(images/warning.png);
+  background-size: 25px;
+} */
+
+
+/* ////////// footer //////////// */
+
+footer {
+  border-top: 1px solid #d6d3d1;
+  height: 100px;
+  display: inline-flex;
+  width: 100%;
+}
+
+.footer-logo{
+  text-align: start;
+  padding-left: 40px;
+  width: 40%;
+}
+.phonenumber{
+  text-align: center;
+  width: 20%;
+}
+.footer-social {
+  text-align: end;
+  padding-right: 40px;
+  width: 40%;
+}
+.footer-logo-img {
+  width: 45px;
+  margin:20px;
+  
+}
+.footer-social-img{
+  width: 40px;
+  margin-left:20px;
+  align-items:center;
+  justify-content: center;
+}
+.copyright{
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #ececec;
+  margin: auto;
+}
+
+@keyframes appear {
+  0% {opacity:0.1; font-size: 45px;}
+  10%{opacity:0.1; }
+  20% {opacity:0.2;}
+  40% {opacity:0.4; }
+  60% {opacity:0.6; }
+  80% {opacity:0.8;}
+  100% {opacity:1; }
+}
